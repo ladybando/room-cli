@@ -14,4 +14,5 @@ task :scrape_rooms do
   nyc_scraper.call
   arizona_scraper = RoomScraper.new("https://phoenix.craigslist.org/search/roo").update_rooms
   arizona_scraper.call
+  #after this method call i should be able to say Room.all and have rooms there
 end
